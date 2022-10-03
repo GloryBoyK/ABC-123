@@ -55,16 +55,12 @@ public class SingleIOMath{
     }
 
     
-    /**
-     * Main method for class SingleIOMath
+   /**
+     * Find the least prime factor of a number
+     * @param num
+     * @return
      */
     public static int leastFactor(int num){
-        /*
-        if(isPrime(num)==true){
-            return -1;
-        }
-        */
-
             for(int i=2; i<=Math.sqrt(num); i++){
                 if(isPrime(i)==true){
                     if(num%i==0){
