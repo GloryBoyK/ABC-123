@@ -54,6 +54,10 @@ public class SingleIOMath{
         return true;
     }
 
+    
+    /**
+     * Main method for class SingleIOMath
+     */
     public static int leastFactor(int num){
         /*
         if(isPrime(num)==true){
