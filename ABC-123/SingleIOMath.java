@@ -10,6 +10,7 @@ import java.lang.Math;
  * Document this class
  * @version 10.03.2022
  * @author 25pandey
+ * MY EXTRA IS METHOD circleArea()
  */
 public class SingleIOMath{
     private String name;
@@ -42,6 +43,7 @@ public class SingleIOMath{
         System.out.println("Favorite number: "+ favNumber);
         System.out.println("Your favorite number squared is  "+favNumber*favNumber);
         System.out.println("Wow your young! You have about "+(73-age)+" years left to live. Thats a lot of time!");
+        System.out.println("If you favorite number was the radius of a circle, the circle would have an area of "+circleArea(favNumber));
         System.out.println("*End of Program*");
     }
 
@@ -54,13 +56,18 @@ public class SingleIOMath{
         return true;
     }
 
-    
-   /**
+    /**
      * Find the least prime factor of a number
      * @param num
      * @return
      */
     public static int leastFactor(int num){
+        /*
+        if(isPrime(num)==true){
+            return -1;
+        }
+        */
+
             for(int i=2; i<=Math.sqrt(num); i++){
                 if(isPrime(i)==true){
                     if(num%i==0){
@@ -69,6 +76,12 @@ public class SingleIOMath{
                 }
             }
             return num;
+    }
+
+    private static double circleArea(int num){
+        double area=(Math.pow(num, 2.0));
+        area=area*=Math.PI;
+        return area;
     }
 
 
