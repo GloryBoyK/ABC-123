@@ -41,6 +41,7 @@ public class SingleIOMath{
         System.out.println("The first prime factor of "+age+" is "+leastFactor(age));
         System.out.println("Favorite number: "+ favNumber);
         System.out.println("Your favorite number squared is  "+favNumber*favNumber);
+        System.out.println("Wow your young! You have about "+(73-age)+" years left to live. Thats a lot of time!");
         System.out.println("*End of Program*");
     }
 
